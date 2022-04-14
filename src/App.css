@@ -1,38 +1,102 @@
-.App {
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.ui.fixed.menu > .ui.container.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ui.grid {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  margin: 10px;
+  justify-content: space-around;
+}
+
+.ui.grid.container {
+  padding-top: 2.76rem;
+}
+
+.ui.link.cards {
+  width: 280px;
+  height: 350px;
+}
+
+.ui.link.cards > .card {
+  border: 1px solid;
+}
+
+.ui.link.cards > .card:hover {
+  box-shadow: 2px 2px 10px;
+  border-radius: 10px;
+  background-color:rgb(228, 248, 248)
+}
+
+.ui.cards > .card > .image > img{
+  width: 100%;
+  height: 220px;
+}
+
+.ui.cards > .card > .image > img:hover{
+  border-radius: 10px 10px 0 0;
+}
+
+.ui.cards > .card > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid;
+}
+
+.ui.cards > .card > .content:hover {
+  border: 1.5px solid gray;
+}
+
+.description {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu .container h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Cabin Sketch', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu .container hr {
+  border: 3px solid;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image h2 {
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 4rem;
+  padding: 10px;
+  background-image: url("https://www.worldtimeserver.com/images/content/tips%20for%20traveling.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  border: 3px solid;
+  border-top: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.placeText h2 {
+  padding: 10px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ui.cards > .card > .content > hr{
+  width: 90%;
+  border: 0.5px solid;
+  margin: 4px;
 }

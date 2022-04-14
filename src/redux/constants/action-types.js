@@ -1,0 +1,5 @@
+export const ActionTypes = {
+    SET_STATES : "SET_STATES",
+    SELECTED_STATE : "SELECTED_STATE",    
+    REMOVE_SELECTED_STATE : "REMOVE_SELECTED_STATE",    
+};
